@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="contCards">
+  <div style="padding: 30px">
+    <h2>
+      <div class="line animated fadeIn"></div>
+      Portafolio
+    </h2>
+    <h1>MI TRABAJO</h1>
+  </div>
+
+  <div class="infoCards animated fast" style="padding: 30px; padding-top: 0">
+    <mat-card *ngFor="let item of projects" class="example-card">
+      <mat-card-header>
+        <mat-card-title class="card-title">{{ item.title }}</mat-card-title>
+        <mat-card-subtitle class="card-subtitle">{{
+          item.position
+        }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="item.img" alt="Face recognition" />
+      <mat-card-actions style="display: flex; justify-content: center">
+        <button (click)="openModel(item)" mat-button>Leer más</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

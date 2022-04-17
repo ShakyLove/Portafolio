@@ -1,0 +1,52 @@
+<div class="header">
+  <div class="infoHeader">
+    <div style="width: 50%; display: flex; align-items: end">
+      <h1 style="margin-bottom: 0" class="animated fadeIn fast">
+        ISAAC BOLIVAR
+      </h1>
+    </div>
+    <div class="nav">
+      <nav class="navbar animated fadeIn">
+        <ul>
+          <li>
+            <a [routerLink]="['/home']">Inicio</a>
+            <div class="line animated fadeIn"></div>
+          </li>
+          <li>
+            <a [routerLink]="['/informacion']" routerLinkActive="active">Información</a>
+            <div class="line animated fadeIn"></div>
+          </li>
+          <li>
+            <a [routerLink]="['/portafolio']" routerLinkActive="active">Portafolio</a>
+            <div class="line animated fadeIn"></div>
+          </li>
+          <li>
+            <a [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a>
+            <div class="line animated fadeIn"></div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button [routerLink]="['/home']" mat-menu-item>
+          <span>Inicio</span>
+        </button>
+        <button [routerLink]="['/informacion']" mat-menu-item>
+          <span>Información</span>
+        </button>
+        <button [routerLink]="['/portafolio']" mat-menu-item>
+          <span>Portafolio</span>
+        </button>
+        <button [routerLink]="['/contacto']" mat-menu-item>
+          <span>Contacto</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

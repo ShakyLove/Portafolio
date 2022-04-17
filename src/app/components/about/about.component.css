@@ -1,0 +1,118 @@
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: black;
+  height: auto;
+}
+.mat-dialog-content {
+  max-height: initial;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.line {
+  border-top: 2px solid #f40e46;
+  width: 20%;
+  margin-left: 11%;
+}
+.line1 {
+  border-top: 2px solid #f40e46;
+  width: 20%;
+  margin-left: 11%;
+}
+h1 {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  margin: 35px 0 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.content {
+  display: flex;
+}
+.photo {
+  width: 35%;
+  margin: 3%;
+}
+.infoPerson {
+  width: 65%;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.infoPerson h3 {
+  font-weight: 800;
+  font-size: 35px;
+  color: #f40e46;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+}
+.infoPerson p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  text-align: justify;
+}
+.skills {
+  display: flex;
+  margin-top: 10px;
+}
+.skills a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+/*********************RESPONSIVE**************************/
+@media (max-width: 500px), (max-width: 1000px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .content {
+    display: contents;
+  }
+  .photo {
+    width: auto;
+  }
+  .infoPerson {
+    width: auto;
+    margin: 30px;
+  }
+  .line,
+  .line1 {
+    width: 200px;
+    margin-left: 39%;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,64 @@
+.container {
+  color: #fff;
+  display: flex;
+}
+.images {
+  width: 60%;
+}
+.info {
+  width: 40%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.contImgs {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.skills {
+  display: flex;
+}
+.skills a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+h2,
+h3 {
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 500;
+}
+p {
+  font-size: 14px;
+  text-align: justify;
+}
+@media (max-width: 500px), (max-width: 1000px) {
+  .container{
+    display: contents;
+  }
+  .images{
+    width: auto;
+  }
+  .info{
+    width: auto;
+    margin-left: 0;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

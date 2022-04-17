@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  height: 100%;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+b {
+  color: #fff;
+  letter-spacing: 3px;
+}
+h2 {
+  font-family: "Raleway";
+  letter-spacing: 2px;
+  color: darkgray;
+  margin-bottom: 10px;
+}
+.navbar {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
+  margin-right: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar a:hover {
+  color: #fff;
+}
+.social-links {
+  display: flex;
+  margin-top: 30px;
+}
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.social-links a:hover {
+  background: #f40e46;
+  transition: 0.3s;
+}
+.info-person {
+  margin: auto;
+}
+.imgs {
+  width: 50%;
+  display: flex;
+}
+.imgs div {
+  margin-top: auto;
+  margin-bottom: auto;
+  border: solid 4px #fff;
+  margin-right: 4%;
+  height: fit-content;
+}
+.imgs img {
+  transition: 0.4s;
+}
+.line {
+  border-top: 2px solid #f40e46;
+  width: 50%;
+  margin-left: 40%;
+}
+.line1 {
+  border-top: 2px solid #f40e46;
+  width: 50px;
+}
+.menu {
+  display: none;
+  justify-content: end;
+  width: inherit;
+}
+.menu button {
+  background-color: rgb(19, 19, 19);
+  width: 50px;
+  height: 80px;
+  cursor: pointer;
+  border: none;
+}
+.menu button div {
+  border-top: 2px solid #fff;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .container {
+    display: contents;
+  }
+  .imgs {
+    display: flex;
+    width: auto;
+    margin: 4%;
+  }
+  .imgs div {
+    margin: 0;
+  }
+  .navbar {
+    display: none;
+  }
+  .info-person {
+    margin: auto;
+    padding: 10%;
+  }
+  h2 {
+    width: 280px;
+  }
+  .menu {
+    display: flex;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    display: contents;
+  }
+  .imgs {
+    display: flex;
+    width: auto;
+    margin: 4%;
+  }
+  .imgs div {
+    margin: 0;
+  }
+  .info-person {
+    margin: auto;
+    padding: 10%;
+  }
+  h2 {
+    width: 280px;
+  }
+  .line {
+    margin-left: 1%;
+    width: 280px;
+  }
+}

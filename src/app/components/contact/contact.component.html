@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+<div class="contCards">
+  <div style="padding: 30px">
+    <h2>
+      <div class="line animated fadeIn"></div>
+      Contacto
+    </h2>
+    <h1>CONTACTAME</h1>
+    <div class="contact">
+      <div class="card">
+        <div class="img">
+          <a>
+            <img
+              src="../../../assets/img/social/email.png"
+              width="40px"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="info">
+          <h1>Correo electrónico</h1>
+          <p>isaacbolivar234@gmail.com</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <a>
+            <img
+              src="../../../assets/img/social/call.png"
+              width="40px"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="info">
+          <h1>Teléfono</h1>
+          <p>+57 321 9309596</p>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <form [formGroup]="contactForm">
+        <div class="inputs">
+          <mat-form-field style="margin: 10px" appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input
+              autocomplete="off"
+              type="text"
+              matInput
+              formControlName="name"
+            />
+            <mat-error *ngIf="error.name.errors"><span *ngIf="error.name.errors.required">¡Advertencia! Campo requerido</span></mat-error>
+
+          </mat-form-field>
+
+          <mat-form-field style="margin: 10px" appearance="fill">
+            <mat-label>Correo electrónico</mat-label>
+            <input
+              autocomplete="off"
+              type="email"
+              matInput
+              formControlName="email"
+            />
+            <mat-error *ngIf="error.email.errors"><span *ngIf="error.email.errors.required">¡Advertencia! Campo requerido</span></mat-error>
+            <mat-error *ngIf="error.email.errors"><span *ngIf="error.email.errors.email">¡Advertencia! Email no valido</span></mat-error>
+
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field style="width: 100%; margin: 10px" appearance="fill">
+            <mat-label>Escribe un mensaje</mat-label>
+            <textarea matInput formControlName="text"></textarea>
+          </mat-form-field>
+        </div>
+
+        <div style="display:flex; justify-content: center">
+          <button>Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

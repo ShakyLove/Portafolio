@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="images">
+    <h1>{{ datos.data.title }}</h1>
+    <div class="contImgs">
+      <mat-tab-group headerPosition="below" mat-align-tabs="center">
+        <mat-tab
+          *ngFor="let item of datos.data.images"
+          label="{{ item.label }}"
+        >
+          <div style="width: 100%">
+            <img [src]="item.img" width="100%" alt="" />
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  <div class="info">
+    <div style="width: 100%;">
+      <h2>Información del proyecto</h2>
+      <br />
+      <p>{{ datos.data.description }}</p>
+      <h3>Tecnologias aplicadas</h3>
+      <div class="skills animated fadeIn fast">
+        <a
+          *ngFor="let item of datos.data.skills"
+          ><img [src]="item" width="35px" alt=""
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>

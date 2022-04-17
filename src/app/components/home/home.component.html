@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button [routerLink]="['/home']" mat-menu-item>
+        <span>Inicio</span>
+      </button>
+      <button [routerLink]="['/informacion']" mat-menu-item>
+        <span>Información</span>
+      </button>
+      <button [routerLink]="['/portafolio']" mat-menu-item>
+        <span>Portafolio</span>
+      </button>
+      <button [routerLink]="['/contacto']" mat-menu-item>
+        <span>Contacto</span>
+      </button>
+    </mat-menu>
+  </div>
+  <div class="info-person">
+    <h1 class="animated fadeIn fast">ISAAC BOLIVAR</h1>
+    <h2 style="margin-left: 20px" class="animated fadeIn">
+      Soy un tecnólogo en sistemas
+    </h2>
+    <h2 class="animated fadeIn">enfocado en el <b>Desarrollo de software</b></h2>
+    <div
+      class="line animated fadeIn"
+    ></div>
+    <nav class="navbar animated fadeIn">
+      <ul>
+        <li>
+          <a href="#">Inicio</a>
+          <div class="line1 animated fadeIn"></div>
+        </li>
+        <li>
+          <a [routerLink]="['/informacion']">Información</a>
+          <div class="line1 animated fadeIn"></div>
+        </li>
+        <li>
+          <a [routerLink]="['/portafolio']">Portafolio</a>
+          <div class="line1 animated fadeIn"></div>
+        </li>
+        <li>
+          <a [routerLink]="['/contacto']">Contacto</a>
+          <div class="line1 animated fadeIn"></div>
+        </li>
+      </ul>
+    </nav>
+    <div class="social-links">
+      <a class="animated fadeIn" href="https://facebook.com/" target="_blanck">
+        <img src="../assets/img/icon_img/facebook.png" width="20px" alt="" />
+      </a>
+      <a class="animated fadeIn" href="https://twitter.com/" target="_blanck">
+        <img src="../assets/img/icon_img/gorjeo.png" width="20px" alt="" />
+      </a>
+      <a
+        class="animated fadeIn"
+        href="https://www.instagram.com/libm.17/?hl=es-la"
+        target="_blanck"
+      >
+        <img src="../assets/img/icon_img/instagram.png" width="20px" alt="" />
+      </a>
+      <a
+        class="animated fadeIn"
+        href="https://www.linkedin.com/in/leider-isaac-bolivar-mendoza-140a40190/"
+        target="_blanck"
+      >
+        <img src="../assets/img/icon_img/linkedin.png" width="20px" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="imgs animated fadeIn fast">
+    <div>
+      <img
+        src="../../../assets/img/home_img/iewek-gnos-hhUx08PuYpc-unsplash.jpg"
+        width="100%"
+        alt=""
+      />
+    </div>
+  </div>
+</div>

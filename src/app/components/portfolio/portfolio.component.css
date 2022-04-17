@@ -1,0 +1,120 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+.infoHeader {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.navbar {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
+  margin-right: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar a:hover {
+  color: #fff;
+}
+.contCards {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: black;
+  height: auto;
+}
+.line {
+  border-top: 2px solid #f40e46;
+  width: 20%;
+  margin-left: 11%;
+}
+h2 {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+.example-card {
+  max-width: 400px;
+  background-color: rgb(19, 19, 19);
+  margin: 20px;
+}
+.example-card button {
+  height: 40px;
+  width: 150px;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.example-card button:hover {
+  background-color: #f40e46;
+  transition: 1s;
+}
+.example-card .card-title {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+.example-card .card-subtitle {
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.infoCards {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px), (max-width: 1000px) {
+  .contCards {
+    width: 100%;
+    height: auto;
+  }
+  .infoCards{
+    display: contents;
+  }
+  .line {
+    width: 200px;
+    margin-left: 31%;
+  }
+}

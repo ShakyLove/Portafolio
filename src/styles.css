@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(19, 19, 19);
+  color: #fff;
+}
+
+/* Animaciones */
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 8;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+.mat-dialog-container {
+  background-color: rgb(19, 19, 19) !important;
+}
+
+.mat-ink-bar {
+  background-color: #fff;
+}
+.mat-tab-label .mat-tab-label-content {
+  color: #fff;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #f40e46;
+}
+.mat-form-field-label {
+  color: #fff; 
+}
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #f40e46;
+}
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #f40e46;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple, .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+  background-color: #fff;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: #fff;
+}
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+  background-color: #fff;
+}
+.mat-menu-item {
+  background: transparent;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.mat-menu-panel {
+  background: black;
+}
