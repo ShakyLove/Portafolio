@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <div class="container">
-  <div style="padding: 30px 30px 0px 30px;">
+  <div style="padding: 30px 30px 0px 30px">
     <h1>
       <div class="line animated fadeIn"></div>
       Información
@@ -31,61 +31,15 @@
       </p>
     </div>
   </div>
-  <div style="padding: 30px 30px 30px 30px;">
+  <div style="padding: 30px 30px 30px 30px">
     <h1>
       <div class="line1 animated fadeIn"></div>
       Habilidades
     </h1>
     <div class="skills animated fadeIn fast">
-      <a matTooltip="Intermedio/Avanzado"
-        ><img src="../../../assets/img/skill_icon/html-5.png" width="40px" alt=""
-      /></a>
-      <a matTooltip="Intermedio"
-        ><img src="../../../assets/img/skill_icon/css-3.png" width="40px" alt=""
-      /></a>
-      <a matTooltip="Suficiente/60%"
-        ><img src="../../../assets/img/skill_icon/js.png" width="40px" alt=""
-      /></a>
-      <a matTooltip="Suficiente/70%"
-        ><img
-          src="../../../assets/img/skill_icon/angular-icon-logo.png"
-          width="40px"
-          alt=""
-      /></a>
-      <a matTooltip="Intermedio"
-        ><img src="../../../assets/img/skill_icon/php.png" width="40px" alt=""
-      /></a>
-      <a matTooltip="Intermedio"
-        ><img
-          src="../../../assets/img/skill_icon/Laravel.svg.png"
-          width="40px"
-          alt=""
-      /></a>
-      <a matTooltip="Minimo"
-        ><img src="../../../assets/img/skill_icon/piton.png" width="40px" alt=""
-      /></a>
-      <a matTooltip="Minimo/Intermedio"
-        ><img
-          src="../../../assets/img/skill_icon/django-icon-0.jpg"
-          width="40px"
-          alt=""
-      /></a>
-      <a matTooltip="Intermedio"
-        ><img src="../../../assets/img/skill_icon/mysql.png" width="40px" alt=""
-      /></a>
-      <a matTooltip="Intermedio"
-        ><img
-          src="../../../assets/img/skill_icon/typescript.png"
-          width="40px"
-          alt=""
-      /></a>
-      <a matTooltip="Suficiente"
-        ><img src="../../../assets/img/skill_icon/git.png" width="40px" alt=""
-      /></a>
-      <a matTooltip="Minimio/Intermedio"
-        ><img src="../../../assets/img/skill_icon/docker.png" width="40px" alt=""
+      <a *ngFor="let item of skills" matTooltip="{{ item.skill }}"
+        ><img [src]="item.path" width="40px" alt=""
       /></a>
     </div>
   </div>
-
 </div>

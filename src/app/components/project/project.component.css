@@ -42,6 +42,10 @@ h3 {
   color: #fff;
   font-weight: 500;
 }
+.subtitle{
+  font-family: "Poppins";
+  color: darkgray;
+}
 p {
   font-size: 14px;
   text-align: justify;
